@@ -1,6 +1,53 @@
+
+git init -инициализация репозитория
+git remote add first_tr https://github.com/pride699/first.git -добавление репозитория на гитхаб
+git config user.name Ковалев Александр 
+git config user.email kovalev@reg.ru -добавили в конфиг имя и почту
+echo "# first" >> README.md -сделали файл README.md, написали в него "# first"
+git add README.md -добавили ридми для отслеживания
+git status -проверили статус
+git commit -m "1st commit" -сделали первый коммит
+git push -u first_tr master -отправили коммит в master ветку
+Далее создали файл task1.1 с текстом, проверили статус, файл значится как untracked.
+Добавили task1.1 в .gitignore, проверили статус, файл исчез.
+git clone --no-hardlinks https://github.com/pride699/first.git ../GitTrain2 -клонировали репозиторий в новую  
+  директорию
+
 echo >fileA
 echo >fileB - создали в новой директории файлы А и В
 git status сообщает о 2х untracked файлах : fileA и fileB
 git add fileA
 git add fileB во втором репозитории, файлы добавлены к stage
 делаем  git commit, git push origin master, файлы отправляются в центральный репозиторий
+
+=======
+переходим в первый репозиторий
+делаем git pull first_tr master в первом репозитории центральный обозначен именем first_tr
+файлы из центрального репозитория получены в первый
+добавили строку текста в fileA и удалили fileB в первом репозитории, внесли информацию
+в этот файл
+git status отобразил изменения - task1.1_answer и fileA -- modified
+                                                  fileB -- deleted
+
+изменения отправили в центральный репозиторий
+во втором репозитории делаем правки в файл task1.1_answer, отправляем в центральный репозиторий,
+получаем ошибку
+Updates were rejected because the tip of your current branch is behind
+ its remote counterpart. Integrate the remote changes (e.g.
+ 'git pull ...') before pushing again. - ветка мастер во 2м репозитории не синхронна с 
+центральным репозиторием.
+делаем git pull с центрального репозитория, видим конфликт файлов task1.1_answer
+Auto-merging task1.1_answer
+CONFLICT (content): Merge conflict in task1.1_answer
+Removing fileB
+Automatic merge failed; fix conflicts and then commit the result.
+
+исправляем файл вручную
+
+
+
+                                                  
+
+
+
+
