@@ -45,6 +45,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 исправляем файл вручную
 
 git checkout -b feature1 создали ветку feature1 в первом репозитории, внесли изменения в fileB
+git pull origin feature1 во втором репозитории получены изменения из ветки feature1 из центрального репозитория
 
 
 
