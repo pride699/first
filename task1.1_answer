@@ -1,14 +1,6 @@
-git init -инициализация репозитория
-git remote add first_tr https://github.com/pride699/first.git -добавление репозитория на гитхаб
-git config user.name Ковалев Александр 
-git config user.email kovalev@reg.ru -добавили в конфиг имя и почту
-echo "# first" >> README.md -сделали файл README.md, написали в него "# first"
-git add README.md -добавили ридми для отслеживания
-git status -проверили статус
-git commit -m "1st commit" -сделали первый коммит
-git push -u first_tr master -отправили коммит в master ветку
-Далее создали файл task1.1 с текстом, проверили статус, файл значится как untracked.
-Добавили task1.1 в .gitignore, проверили статус, файл исчез.
-
-
-
+echo >fileA
+echo >fileB - создали в новой директории файлы А и В
+git status сообщает о 2х untracked файлах : fileA и fileB
+git add fileA
+git add fileB во втором репозитории, файлы добавлены к stage
+делаем  git commit, git push origin master, файлы отправляются в центральный репозиторий
