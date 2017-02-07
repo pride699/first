@@ -44,6 +44,13 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 исправляем файл вручную
 
+переключаемся в ветку feature2
+git branch -r выдал список удаленных веток
+origin/HEAD -> origin/master
+  origin/feature1
+  origin/master
+
+
 
 
                                                   
