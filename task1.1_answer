@@ -44,6 +44,8 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 исправляем файл вручную
 
+git checkout -b feature1 создали ветку feature1 в первом репозитории, внесли изменения в fileB
+
 
 
                                                   
