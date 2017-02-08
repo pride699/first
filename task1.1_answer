@@ -20,7 +20,7 @@ git add fileA
 git add fileB во втором репозитории, файлы добавлены к stage
 делаем  git commit, git push origin master, файлы отправляются в центральный репозиторий
 
-=======
+
 переходим в первый репозиторий
 делаем git pull first_tr master в первом репозитории центральный обозначен именем first_tr
 файлы из центрального репозитория получены в первый
@@ -43,6 +43,18 @@ Removing fileB
 Automatic merge failed; fix conflicts and then commit the result.
 
 исправляем файл вручную
+
+
+git checkout -b feature1 создали ветку feature1 в первом репозитории, внесли изменения в fileB
+git pull origin feature1 во втором репозитории получены изменения из ветки feature1 из центрального репозитория
+
+переключаемся в ветку feature2
+git branch -r выдал список удаленных веток
+origin/HEAD -> origin/master
+  origin/feature1
+  origin/master
+
+
 
 
 
