@@ -54,6 +54,11 @@ origin/HEAD -> origin/master
   origin/feature1
   origin/master
 
+git branch -rd first_tr/feature1
+git branch -d feature1 удалили ветку feature локально и в цетральном репозитории
+
+git tag -a v1.0 -m "1.0 version of master"текущее состояние ветки master обозначено 1.0
+
 
 
 
